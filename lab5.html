@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        //Одномерные массивы
+        //Задание 4
+        function Productlab5(arr) {
+            let index = 1;
+            for (let i = arr.length - 2; i > 0; i--) {
+                if (arr.length > 3) {
+                    index *= arr[i];
+                } else {
+                    console.log("Ошибка");
+                }
+            }
+            return index;
+        }
+
+        let mass4 = [1, 5, 4, 7];
+        console.log(Productlab5(mass4));
+        let mass5 = [1, 8, 9, 10, 20];
+        console.log(Productlab5(mass5));
+    </script>
+</body>
+
+</html>
